@@ -1,0 +1,59 @@
+[project]
+name = "pteb"
+version = "0.1.0"
+description = "Paraphrase Text Embedding Benchmark"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  # Core data processing
+  "datasets>=4.0.0",
+  "pandas>=2.2.3",
+  "numpy>=2.2.6",
+  "scipy>=1.15.1",
+  "scikit-learn>=1.7.1",
+  # NLP and embeddings
+  "sentence-transformers>=3.3.1",
+  "transformers>=4.50.0",
+  "mteb>=1.38.33",
+  # LLM for paraphrasing (local only)
+  "ollama>=0.5.3",
+  # PyTorch family – versions/index come from [tool.uv.*] below
+  "torch",
+  "torchvision",
+  "torchaudio",
+  "accelerate>=1.10.1",
+  # Utilities
+  "tqdm>=4.66.5",
+  # File I/O
+  "openpyxl>=3.1.5",
+]
+
+[project.scripts]
+pteb = "pteb.pteb_eval:cli_entry_point"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pteb*"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "ty>=0.0.13",
+    "ruff>=0.12.0",
+]
+
+[tool.ty]
+# ty type checker configuration
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

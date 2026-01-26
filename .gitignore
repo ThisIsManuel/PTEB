@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# Models
+/models
+
+# Dataset files
+/data
+
+# Results
+/results
+
+# Distribution / Packaging
+*.egg-info/
+
+# Markdown files
+*.md
+!README.md
+
+# Miscellaneous
+*.pdf
