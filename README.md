@@ -4,9 +4,13 @@
   <strong>Towards Robust Text Embedding Evaluation via Stochastic Paraphrasing at Evaluation Time with LLMs</strong>
 </p>
 
+---
+
 <p align="center">
-  <a href="https://arxiv.org/abs/2510.06730">📄 Paper</a> •
-  <a href="https://github.com/ThisIsManuel/pteb">💻 Code</a> •
+  <a href="https://aclanthology.org/2026.eacl-long.130/"><img src="images/icons/acl-logo.svg" height="16" alt="arXiv"> EACL 2026 Main Paper</a>
+  &nbsp;&nbsp;■&nbsp;&nbsp;
+  <a href="https://arxiv.org/abs/2510.06730"><img src="images/icons/arXiv-logo.svg" height="16" alt="arXiv"> Preprint</a>
+	&nbsp;&nbsp;■&nbsp;&nbsp;
   <a href="#citation">📖 Citation</a>
 </p>
 
