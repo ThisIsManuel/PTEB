@@ -7,10 +7,10 @@
 ---
 
 <p align="center">
-  <a href="https://aclanthology.org/2026.eacl-long.130/"><img src="images/icons/acl-logo.svg" height="16" alt="arXiv"> EACL 2026 Main Paper</a>
+  <a href="https://aclanthology.org/2026.eacl-long.130/"><img src="images/icons/acl-logo.svg" height="16" alt="ACL"> EACL 2026 Main Paper</a>
   &nbsp;&nbsp;■&nbsp;&nbsp;
   <a href="https://arxiv.org/abs/2510.06730"><img src="images/icons/arXiv-logo.svg" height="16" alt="arXiv"> Preprint</a>
-	&nbsp;&nbsp;■&nbsp;&nbsp;
+  &nbsp;&nbsp;■&nbsp;&nbsp;
   <a href="#citation">📖 Citation</a>
 </p>
 
@@ -284,17 +284,56 @@ Then add the class name to the imports and to `ALL_DATASET_METADATA_CLASSES` in 
 
 ## Citation
 
-If you use PTEB, please cite our paper:
+If you use or build on PTEB, please cite our paper:
 
 ```bibtex
-@misc{frank2026ptebrobusttextembedding,
-      title={PTEB: Towards Robust Text Embedding Evaluation via Stochastic Paraphrasing at Evaluation Time with LLMs}, 
-      author={Manuel Frank and Haithem Afli},
-      year={2026},
-      eprint={2510.06730},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2510.06730}, 
+@inproceedings{FrankAfli_2026_PTEB_EACL,
+    title = "{PTEB}: Towards Robust Text Embedding Evaluation via Stochastic Paraphrasing at Evaluation Time with {LLM}s",
+    author = "Frank, Manuel  and
+      Afli, Haithem",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.130/",
+    doi = "10.18653/v1/2026.eacl-long.130",
+    pages = "2832--2851",
+    ISBN = "979-8-89176-380-7"
+}
+```
+
+If you specifically want to cite a preprint version that predates the EACL 2026 proceedings, please cite one of the arXiv versions below.
+
+This is v3 of the preprint (February 2026):
+```bibtex
+@misc{FrankAfli_2026_PTEB_Preprint,
+    title = {{PTEB}: Towards Robust Text Embedding Evaluation via Stochastic Paraphrasing at Evaluation Time with {LLM}s},
+    author = {Manuel Frank and Haithem Afli},
+    year = {2026},
+    month = feb,
+    eprint = {2510.06730v3},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CL},
+    url = {https://arxiv.org/abs/2510.06730v3},
+}
+```
+
+This is v1 of the preprint (October 2025):
+
+```bibtex
+@misc{FrankAfli_2025_PTEB_Preprintv1,
+    title = {{PTEB}: Towards Robust Text Embedding Evaluation via Stochastic Paraphrasing at Evaluation Time with {LLM}s},
+    author = {Manuel Frank and Haithem Afli},
+    year = {2025},
+    month = oct,
+    eprint = {2510.06730v1},
+    archivePrefix = {arXiv},
+    primaryClass = {cs.CL},
+    url = {https://arxiv.org/abs/2510.06730v1},
 }
 ```
 
